@@ -63,8 +63,8 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
-${renderLicenseSection(data.license)}  
+  return `
+# ${data.title}
 
 # Description  
 ${data.description}  
@@ -83,14 +83,14 @@ The following dependencies must be installed to use this application: ${data.ins
 # Usage  
 How to use the application: ${data.usage}  
 
-# License  
-This project is licensed under the ${data.license} license.  
+# Tests
+Command used to run tests on this application: ${data.tests} 
 
 # Contributors  
 ${data.contributors}  
 
-# Tests
-Command used to run tests on this application: ${data.tests}  
+${renderLicenseSection(data.license)}  
+This project is licensed under the ${data.license} license.  
 
 # Questions  
 If you have any questions, please contact me at ${data.email}
