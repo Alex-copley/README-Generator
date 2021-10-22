@@ -90,7 +90,7 @@ Command used to run tests on this application: ${data.tests}
 ${data.contributors}  
 
 ${renderLicenseSection(data.license)}  
-This project is licensed under the ${data.license} license.  
+
 
 # Questions  
 If you have any questions, please contact me at ${data.email}
